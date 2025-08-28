@@ -1,0 +1,224 @@
+/* Global settings */
+
+:root{
+  --mainBgColor:rgba(20,20,31,11);
+  --secondaryBgColor:rgba(27,27,39,1);
+  --borderColor1:rgba(40,41,57,1);
+  --borderColor2:rgba(79,86,105,1);
+  --textColorMain:#fff;
+  --textColorSecondary:rgb(226, 227, 232);
+  --themeColorMain:rgba(219,26,90,1);
+  --themeColorSecondary:#386fd2;
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 670;
+}
+
+a{
+color: #40e0d0;
+}
+
+body{
+  background-color: var(--mainBgColor);
+  color: var(--textColorMain);
+}
+
+.container{
+max-width: 450px;
+margin:20px auto;
+
+}
+.register-link{
+  font-size: 12px;
+  font-weight: 100;
+  color: grey;
+  margin-top: 10px;
+}
+/* Login & Register Pages */
+
+.auth--container{
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.form--wrapper{
+width: 300px;
+border-radius: 20px;
+border: 2px solid rgb(96, 56, 56);
+padding: 2em;
+background-color: rgb(44, 24, 31);
+box-shadow: 2px 2px 2px black;
+}
+
+.field--wrapper{
+display: flex;
+flex-direction: column;
+gap: 1em;
+padding: 0.5em 0;
+}
+
+
+.login{
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+/* Form Input Styling */
+
+input[type="text"], input[type="password"], input[type="email"], textarea{
+background: white;
+border: none;
+border-bottom: 1px solid var(--borderColor1);
+padding: 1rem;
+border-radius: 3px;
+width: 100%;
+color: black;
+outline: none;
+font-size: 18px;
+text-shadow: none !important;
+border-radius: 7px;
+}
+
+
+/* Button Styling */
+
+.btn{
+padding: 0.5em 1em;
+border: none;
+border-radius: 2px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.btn--lg{
+padding: 1em 2em;
+
+}
+
+.btn--main{
+background-color: rgba(219,26,90,1);
+color: #fff;
+font-size: 16px;
+border-radius: 5px;
+}
+
+.btn--secondary{
+background-color: #386fd2;
+border: none;
+font-size: 15px;
+font-weight: 800;
+color: white;
+}
+
+.btn:hover{
+opacity: 0.7;
+}
+
+/* Header Styling */
+
+#header--wrapper{
+background-color: var(--mainBgColor);
+padding: 1em;
+display: flex;
+justify-content: space-between;
+border-radius: 10px 10px 0 0;
+border:1px solid var(--borderColor1);
+border-bottom: none;
+}
+
+.header--link{
+color: #c7d8eb;
+cursor: pointer;
+transition: 0.3s;
+}
+
+.header--link:hover{
+color: #8db3dd;
+}
+
+/* Room Styling */
+
+.room--container{
+padding: 2em;
+background-color: var(--secondaryBgColor);
+border-radius: 0 0 10px 10px;
+border:1px solid var(--borderColor1);
+}
+
+#message--form{
+display: flex;
+flex-direction: column;
+gap: 0.5em;
+
+
+}
+textarea{
+  border-radius: 20px;
+  background-color: white;
+  height: 70px;
+  color: black;
+  
+  
+}
+textarea:focus{
+  border: 2px solid red;
+}
+.send-btn--wrapper{
+display: flex;
+justify-content: flex-end;
+}
+
+.message--wrapper{
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+gap: 0.5em;
+margin:1em;
+}
+
+.message--header{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.message--body{
+padding: 0.5em 0;
+color: var(--textColorSecondary);
+background-color: var(--themeColorMain);
+padding: 0.9em;
+border-radius: 20px 0px 20px 20px;
+width:fit-content;
+max-width: 100%;
+word-wrap: break-word; /* added */
+
+}
+
+.message--body--owner{
+border: 1px solid rgba(219,26,90,1);
+background-color: var(--secondaryBgColor);
+}
+
+.message-timestamp{
+margin-left: 1em;
+color: rgb(164, 161, 161);
+font-weight: 100;
+}
+
+.delete--btn{
+color:#8db3dd;
+cursor: pointer;
+transition: 0.3s;
+width: 16px;
+}
+
+.delete--btn:hover{
+color:red;
+}
